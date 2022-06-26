@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 55%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+body{
+    margin: 0;
+    background-color: var(--very-dark-blue);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 10%;
+    background: linear-gradient(hsl(213, 19%, 25%),hsl(216, 12%, 8%));
+    color: var(--light-grey);
+    /* width: 65%; */
+    width: 320px;
+    /* height: 100vh; */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container h3{
+    color: var(--White);
+}
+.container button{
+    background-color: var(--Orange);
+    width: 100%;
+}
+.card{
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+}
+.card img{
+    margin-top: -10px;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+}
+.card ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.card ul li{
+    list-style: none;
+    text-align: center;
+}
+.card ul li button{
+    border: 0;
+    padding: 12px 15px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    cursor: pointer;
+}
+.card ul li button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.card ul li button:focus {
+    background-color: var(--light-grey);
+    color: var(--White);
+}
+
+#submit{
+    padding: 10px;
+    border-radius: 25px;
+    color: var(--White);
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* Rating */
+#rating{
+    padding: 20px;
+    text-align: center;
+}
+#rating h2{
+    color: var(--White);
+}
+.rating{
+    width: 70%;
+    padding: 10px;
+    margin: 16px auto;
+    background-color: hsl(216, 12%, 25%);
+    color: var(--Orange);
+    border-radius: 25px;
+}
+.thankyou{
+
+    width: 50%;
+}
+.note{
+    font-size: 0.8rem;
+}
+#warning{
+    color: red;
+    text-align: center;
+}
