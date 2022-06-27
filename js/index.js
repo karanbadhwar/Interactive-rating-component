@@ -2,7 +2,7 @@ let submit = document.getElementById('submit');
 let ul = document.getElementById('list');
 let container = document.getElementById('container');
 let body = document.getElementsByTagName('body')[0];
-let rating ='';
+let rating = 0;
 
 function flipCard(e){
     // console.log(e.target)
@@ -16,7 +16,9 @@ function flipCard(e){
         `;
         container.innerHTML = div;
         let warn = document.getElementById('warning');
-        warn.style.display='none';
+        if(warn){
+            warn.style.display='none';
+        }
     }else{
         const warning = `
                     <h3 id='warning'>Please Select One Number for Rating
@@ -37,7 +39,7 @@ function flipCard(e){
 
 ul.addEventListener('click', (e) =>{
     // console.log(e.target.value);
-    rating+= e.target.value;
+    rating = parseInt(e.target.value);
 });
 
 submit.addEventListener('click', flipCard);
